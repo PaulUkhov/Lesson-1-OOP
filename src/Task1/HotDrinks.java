@@ -1,8 +1,8 @@
 package Task1;
 
 public class HotDrinks  extends  Product{
-    int volume;
-    int temperature;
+    private int volume;
+    private int temperature;
 
     public int getTemperature() {
         return temperature;
