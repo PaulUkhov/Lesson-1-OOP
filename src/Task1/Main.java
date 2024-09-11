@@ -15,15 +15,17 @@ public class Main {
         hotDrinks.add(new HotDrinks("Чай", 120, 80,90));
         hotDrinks.add(new HotDrinks("Кокао", 80, 70,90));
         VendingMachine vendingMachine = new HotDrinksMachine(hotDrinks);
-        Product foundProduct = vendingMachine.getProduct("Чай");
+       Product foundProduct = vendingMachine.getProduct("Чай");
+        Product foundProduct2 = vendingMachine.getProduct("Кокао");
+        Product foundProduct3 = vendingMachine.getProduct("Кофе");
 
-
-        if (foundProduct != null){
+        if (foundProduct != null || foundProduct2 != null || foundProduct3 != null){
             System.out.println(foundProduct);
+            System.out.println(foundProduct2);
+            System.out.println(foundProduct3);
         }
         else {
             System.out.println("Горячий Напиток не найден ");
         }
     }
 }
-
